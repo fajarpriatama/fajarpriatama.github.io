@@ -51,32 +51,13 @@
     width: 100%;
     height: 100%;
     align-items: center;
-    align-content: center;
     padding: 0;
     opacity: 0;
     font-weight: bold;
     color: white;
     justify-content: center;
     flex-direction: column;
-}
-
-.gallery-iteminfo-value1  {
-    display: none;
-    align-content: center;
-    justify-content: center;
-}
-
-.gallery-iteminfo-value2  {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 0.5em;
-}
-
-.gallery-iteminfo-like {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    row-gap: .5em;
 }
 
 .gallery-iteminfo:hover {
@@ -84,8 +65,21 @@
     background-color: rgba(0,0,0, 0.5);
 }
 
+.gallery-iteminfo .eth-dark {
+    display: inline;
+}
+
+.gallery-iteminfo .eth-light {
+    display: none;
+}
+
 .gallery-iteminfo img {
     width: 20px;
+}
+
+.gallery-iteminfo > span {
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -103,8 +97,6 @@
     .gallery-iteminfo {
         position: relative;
         justify-content: space-between;
-        flex-direction: row;
-        align-items: center;
         font-weight: bold;
         color: white;
         opacity: 1;
@@ -112,34 +104,19 @@
         height: auto;
         color: black;
         font-weight: 100;
-    }
-
-    .gallery-iteminfo-value {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    
-    .gallery-iteminfo-value1  {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    
-    .gallery-iteminfo-value2  {
-        display: none;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .gallery-iteminfo-like {
-        display: flex;
-        align-content: center;
-        justify-content: center;
+        flex-direction: row;
     }
 
     .gallery-iteminfo:hover {
         background-color: transparent;
+    }
+
+    .gallery-iteminfo .eth-dark {
+        display: none;
+    }
+    
+    .gallery-iteminfo .eth-light {
+        display: inline;
     }
 
 }

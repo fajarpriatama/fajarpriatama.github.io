@@ -19,6 +19,15 @@ html {
     justify-content: space-between;
 }
 
+button > img {
+    height: 100%;
+}
+
+footer {
+    margin-top: 5em;
+    text-align: center;
+}
+
 @media screen and (max-width: 900px) {
     .container {
         width: 80%;
@@ -34,6 +43,11 @@ html {
 @media screen and (max-width: 480px) {
     .container {
         width: 100%;
+        justify-content: space-around;
+    }
+
+    footer {
+        margin-bottom: 3.5em;
     }
 
 }
